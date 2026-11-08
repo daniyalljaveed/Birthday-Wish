@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts-container"></div>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen" class="screen active">
+  <div class="lock-box">
+    <div class="lock-icon">🔒</div>
+    <h2>Enter Your Birth Year</h2>
+    <p class="hint">The year you were born 🎂</p>
+    <input type="password" id="pinInput" maxlength="4" placeholder="____" inputmode="numeric">
+    <button id="unlockBtn">Unlock My Surprise 💝</button>
+    <p id="pinError" class="error"></p>
+  </div>
+</div>
+
+<!-- MAIN SCREEN -->
+<div id="mainScreen" class="screen">
+
+  <section class="hero">
+    <h1 class="title">Happy Birthday<br><span class="name">My Love ❤️</span></h1>
+    <p class="subtitle">A surprise made just for you...</p>
+    <div class="balloons">
+      <span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2 class="section-title">Our Memories 📸</h2>
+    <p class="section-sub">Tap any photo 💌</p>
+
+    <div class="photo-grid">
+
+      <div class="photo-card" data-title="Forever My Favorite 💕"
+        data-msg="Ye tasveer meri sabse pyari hai. Tumhari muskurat aisi hai jaise sooraj ki pehli kiran — sab kuch roshan kar deti hai. Main is pal ko hamesha yaad rakhunga.">
+        <img src="pic1.jpeg" alt="Memory 1">
+        <div class="photo-caption">Forever my favorite 💕</div>
+      </div>
+
+      <div class="photo-card" data-title="That Smile 😍"
+        data-msg="Tumhari hansi sun kar aisa lagta hai jaise poori duniya ruk gayi ho. Allah ne tumhe apna poora pyaar daal kar banaya hai. Main lucky hoon jo tum meri ho.">
+        <img src="pic2.jpeg" alt="Memory 2">
+        <div class="photo-caption">That smile 😍</div>
+      </div>
+
+      <div class="photo-card" data-title="My Whole World 🌍"
+        data-msg="Tumhare saath har pal special hai. Chahe hum kuch karein ya na karein — tumhari maujoodgi hi kaafi hai meri khushi ke liye. Tum meri duniya ho.">
+        <img src="pic3.jpeg" alt="Memory 3">
+        <div class="photo-caption">My whole world 🌍</div>
+      </div>
+
+      <div class="photo-card" data-title="Magical Moments ✨"
+        data-msg="Har lamha tumhare saath jaadu jaisa hai. Ye photo dekh kar aaj bhi woh din yaad aata hai. Meri dua hai ki hum aise hi aur bahut si yaadein banayein.">
+        <img src="./893621418_1405365561361912_8379659046483856399_n.jpg" alt="Memory 4">
+        <div class="photo-caption">Magical moments ✨</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="surprises">
+    <h2 class="section-title">Tap for Surprises 🎁</h2>
+    <p class="section-sub">Every button = new surprise 💝</p>
+    <div class="btn-grid">
+      <button class="surprise-btn" data-surprise="poem">💌 Love Poem</button>
+      <button class="surprise-btn" data-surprise="compliment">🌹 Compliment</button>
+      <button class="surprise-btn" data-surprise="memory">💭 Memory</button>
+      <button class="surprise-btn" data-surprise="wish">🎂 Birthday Wish</button>
+      <button class="surprise-btn" data-surprise="question">❓ Question</button>
+      <button class="surprise-btn" data-surprise="secret">🔐 Secret</button>
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>You Are My Everything 💕</h2>
+    <p>Every day with you is a celebration. Today the world celebrates YOU.</p>
+    <button id="finalBtn" class="final-btn">One Last Surprise 🎆</button>
+  </section>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-icon">💖</div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
